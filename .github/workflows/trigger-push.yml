@@ -18,6 +18,15 @@ jobs:
       - name: Upload Robot to Control Room
         uses: robocorp/action-upload-robot@v1
         with:
-          workspace-key: 1lP9wJ5JHu9yFyLgJxFax0urJppNTb7812fo1KjnQw6nGNeNbHOSGWdxdwm5HAVQNNryRzEK1Nk72ma3E4gpLQXQN8Bh1j4KRma4o0x7rxqLYur6xz7V6JdLlsgmnyd
-          workspace-id: 2a42d782-187a-4e53-baf6-52bfbea9a2f1
-          robot-id: 22700
+          workspace-key: ${{ secrets.ROBOCORP_WORKSPACE_KEY }}
+          workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
+          robot-id: ${{ secrets.ROBOCORP_ROBOT_ID }}
+          await-complete: true
+      - name: Trigger Control Room process run
+        uses: robocorp/action-trigger-process@v1
+        with:
+          workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
+          api-key: ${{ secrets.ROBOCORP_WORKSPACE_KEY }}
+          process-id: ${{ secrets.ROBOCORP_PROCESS_ID }}
+          payload: '{"foo":"bar"}'
+          await-complete: true
