@@ -14,7 +14,7 @@ Library             XML
 
 *** Tasks ***
 Order robots from RobotSpareBin Industries Inc
-    ${orderNo}=    Set Variable    9
+    ${orderNo}=    Set Variable    8
     #${orderNo}=    Get and log the value of the vault
     #${orderNo}=    Ask order index
     Open the robot order website

@@ -29,4 +29,4 @@ jobs:
           api-key: ${{ secrets.ROBOCORP_WORKSPACE_KEY }}
           process-id: ${{ secrets.ROBOCORP_PROCESS_ID }}
           payload: '{"foo":"bar"}'
-          await-complete: true
+          #await-complete: true
