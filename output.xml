@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230131 12:46:56.712" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="/Users/kenny/Desktop/kenny working/robocorp/lvl2rcc/tasks.robot">
+<test id="s1-t1" name="Order robots from RobotSpareBin Industries Inc" line="6">
+<kw name="Open the robot order website">
+<kw name="Log" library="BuiltIn">
+<arg>hello</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230131 12:46:56.761" level="INFO">hello</msg>
+<status status="PASS" starttime="20230131 12:46:56.761" endtime="20230131 12:46:56.762"/>
+</kw>
+<status status="PASS" starttime="20230131 12:46:56.760" endtime="20230131 12:46:56.763"/>
+</kw>
+<status status="PASS" starttime="20230131 12:46:56.759" endtime="20230131 12:46:56.763"/>
+</test>
+<doc>Template robot main suite.</doc>
+<status status="PASS" starttime="20230131 12:46:56.719" endtime="20230131 12:46:56.763"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
